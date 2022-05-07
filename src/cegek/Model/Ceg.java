@@ -13,8 +13,15 @@ import java.util.ArrayList;
 public abstract class Ceg {
     
     private String alakult;
-    private String cegvezetoNeve;
+    private Ugyvezeto ugyvezeto;
     private int dolgozokSzama;
-    private ArrayList<Integer> dolgozokAzonositoja = new ArrayList<Integer>();
+    private ArrayList<Integer> dolgozokAzonositoja;
+
+    public Ceg(String alakult, Ugyvezeto ugyvezeto, int dolgozokSzama, ArrayList<Integer> dolgozokAzonositoja) {
+        this.alakult = alakult;
+        this.ugyvezeto = ugyvezeto;
+        this.dolgozokSzama = dolgozokSzama;
+        this.dolgozokAzonositoja = dolgozokAzonositoja;
+    }
     
 }
