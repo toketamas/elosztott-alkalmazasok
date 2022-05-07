@@ -5,6 +5,10 @@
         <group>
             <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/CegekFx.java</file>
             <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/CegekFXController.java</file>
+            <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/Ugyvezeto.java</file>
+            <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/Beltag.java</file>
+            <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/Ceg.java</file>
+            <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/User.java</file>
         </group>
     </open-files>
 </project-private>
