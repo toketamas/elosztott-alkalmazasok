@@ -4,14 +4,16 @@
  */
 package cegek.Model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author ttoke
  */
 public interface ICegjegyzek {
-    public void listaBekerulesDatumSzerint();
-    public void listaLetszamSzerint();
-    public void listaAlaptokeSzerint();
+    public ArrayList<Ceg> listaBekerulesDatumSzerint();
+    public ArrayList<Ceg> listaLetszamSzerint();
+    public ArrayList<Ceg> listaAlaptokeSzerint();
     public void cegjegyzekMentes();
     public void cegjegyzekBetoltes();    
 }

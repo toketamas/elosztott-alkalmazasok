@@ -3,12 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/CegekFx.java</file>
-            <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/CegekFXController.java</file>
-            <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/Ugyvezeto.java</file>
-            <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/Beltag.java</file>
-            <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/Ceg.java</file>
-            <file>file:/A:/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/User.java</file>
+            <file>file:/home/ttoke/TT_GIT/elosztott-alkalmazasok/src/cegek/CegekFXML.fxml</file>
+            <file>file:/home/ttoke/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/ICegjegyzek.java</file>
+            <file>file:/home/ttoke/TT_GIT/elosztott-alkalmazasok/src/cegek/CegekFx.java</file>
+            <file>file:/home/ttoke/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/Bt.java</file>
+            <file>file:/home/ttoke/TT_GIT/elosztott-alkalmazasok/src/cegek/CegekFXController.java</file>
+            <file>file:/home/ttoke/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/Cegjegyzek.java</file>
+            <file>file:/home/ttoke/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/Ceg.java</file>
+            <file>file:/home/ttoke/TT_GIT/elosztott-alkalmazasok/src/cegek/Model/Kft.java</file>
         </group>
     </open-files>
 </project-private>

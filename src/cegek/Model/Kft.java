@@ -12,12 +12,10 @@ import java.util.ArrayList;
  */
 public class Kft extends Ceg implements IKft {
 
-    private int alapToke;
-
-    public Kft(int alaptoke, String alakult, String cegvezetoNeve, int dolgozokSzama, ArrayList<Integer> dolgozokAzonositoja) {
-        super(alakult, cegvezetoNeve, dolgozokSzama, dolgozokAzonositoja);
-        this.alapToke = alaptoke;
-    }
+    public Kft(int alapToke, String alakult, Ugyvezeto ugyvezeto, int dolgozokSzama, ArrayList<Integer> dolgozokAzonositoja) {
+        super(alapToke, alakult, ugyvezeto, dolgozokSzama, dolgozokAzonositoja);
+    }     
+    
     @Override
     public void alaptokeValtozas(int alapToke) {
         this.alapToke=alapToke;

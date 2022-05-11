@@ -10,8 +10,8 @@ package cegek.Model;
  */
 public class Beltag extends User {
 
-    public Beltag(String nev, int azonosito) {
-        super(azonosito);
+    public Beltag(String nev) {
+        super();
         this.nev = nev;
     }
     private String nev;

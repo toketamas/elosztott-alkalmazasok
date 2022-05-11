@@ -4,24 +4,41 @@
  */
 package cegek.Model;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.io.Serializable;
+
 /**
  *
  * @author ttoke
  */
-public class Cegjegyzek implements ICegjegyzek{
+public class Cegjegyzek implements ICegjegyzek, Serializable{
+
+    private ArrayList<Ceg> lista;
+
+    public Cegjegyzek() {
+        this.lista = null;
+    }
+
+    public void addCeg(Ceg ceg) {
+        ceg.setCegjegyzekbeKerult(new Timestamp(System.currentTimeMillis()).getTime());
+        lista.add(ceg);
+    }
 
     @Override
-    public void listaBekerulesDatumSzerint() {
+    public ArrayList<Ceg> listaBekerulesDatumSzerint() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public void listaLetszamSzerint() {
+    public ArrayList<Ceg> listaLetszamSzerint() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public void listaAlaptokeSzerint() {
+    public ArrayList<Ceg> listaAlaptokeSzerint() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
@@ -34,5 +51,6 @@ public class Cegjegyzek implements ICegjegyzek{
     public void cegjegyzekBetoltes() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
+
+   
 }

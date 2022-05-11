@@ -18,7 +18,7 @@ public class CegekFx extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-       Parent root= FXMLLoader.load(getClass().getResource("CEGEKFXML.fxml"));
+       Parent root= FXMLLoader.load(getClass().getResource("CegekFXML.fxml"));
        Scene scene = new Scene(root);
        stage.setTitle("F29893 Cégek");
        stage.setScene(scene);

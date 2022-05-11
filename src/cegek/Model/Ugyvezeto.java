@@ -12,9 +12,14 @@ public class Ugyvezeto extends User {
     private int kor;
     private String vegzettseg;
 
-    public Ugyvezeto(int kor, String vegzettseg, int azonosito) {
-        super(azonosito);
+    public Ugyvezeto(int kor, String vegzettseg) {
+        super();
         this.kor = kor;
         this.vegzettseg = vegzettseg;
+    }
+    
+    
+    public Ugyvezeto ugyvezetotMasol(){
+        return this;
     }
 }

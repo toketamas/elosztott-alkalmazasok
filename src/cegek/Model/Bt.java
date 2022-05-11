@@ -11,15 +11,20 @@ import java.util.ArrayList;
  * @author ttoke
  */
 public class Bt extends Ceg implements IBt {
-    private Beltag beltag;
 
-    public Bt(Beltag beltag, String alakult, String cegvezetoNeve, int dolgozokSzama, ArrayList<Integer> dolgozokAzonositoja) {
-        super(alakult, cegvezetoNeve, dolgozokSzama, dolgozokAzonositoja);
+    private Beltag beltag;    
+
+    public Bt(Beltag beltag, String alakult, Ugyvezeto ugyvezeto, int dolgozokSzama, ArrayList<Integer> dolgozokAzonositoja) {
+        super(alakult, ugyvezeto, dolgozokSzama, dolgozokAzonositoja);
         this.beltag = beltag;
+       
     }
+
+   
+
     @Override
     public void beltagValtozas(Beltag beltag) {
-        this.beltag=beltag;
+        this.beltag = beltag;
     }
-    
+
 }
