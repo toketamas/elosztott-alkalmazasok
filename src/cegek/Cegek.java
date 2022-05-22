@@ -4,6 +4,9 @@
  */
 package cegek;
 
+import cegek.Model.Bt;
+import cegek.Model.Cegjegyzek;
+
 /**
  *
  * @author ttoke
@@ -14,7 +17,9 @@ public class Cegek {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       Cegjegyzek cegjegyzek = Cegjegyzek.cegjegyzekBetoltes();
+        System.out.println(cegjegyzek);
+        cegjegyzek.cegjegyzekMentes();
     }
     
 }

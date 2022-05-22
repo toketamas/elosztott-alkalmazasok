@@ -15,5 +15,5 @@ public interface ICegjegyzek {
     public ArrayList<Ceg> listaLetszamSzerint();
     public ArrayList<Ceg> listaAlaptokeSzerint();
     public void cegjegyzekMentes();
-    public void cegjegyzekBetoltes();    
+   
 }
