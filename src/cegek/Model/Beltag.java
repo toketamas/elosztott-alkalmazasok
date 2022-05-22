@@ -4,15 +4,23 @@
  */
 package cegek.Model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author ttoke
  */
-public class Beltag extends User {
+public class Beltag extends User implements Serializable{
 
-    public Beltag(String nev) {
+    public Beltag(int aznosito,String nev) {
         super();
         this.nev = nev;
     }
     private String nev;
+
+    public String getNev() {
+        return nev;
+    }
+    
+    
 }

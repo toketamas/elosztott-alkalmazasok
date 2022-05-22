@@ -8,6 +8,7 @@ package cegek.Model;
  *
  * @author ttoke
  */
-public interface IBt {
+public interface IBt{
      public void beltagValtozas(Beltag beltag);
 }
+        

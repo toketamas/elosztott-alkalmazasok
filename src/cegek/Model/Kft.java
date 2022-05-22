@@ -4,16 +4,27 @@
  */
 package cegek.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author ttoke
  */
-public class Kft extends Ceg implements IKft {
+public class Kft extends Ceg implements IKft,Serializable {
+    
+    private Ugyvezeto ugyvezeto;
+    private int alapToke;
+
+    public int getAlapToke() {
+        return alapToke;
+    }
+    
 
     public Kft(int alapToke, String alakult, Ugyvezeto ugyvezeto, int dolgozokSzama, ArrayList<Integer> dolgozokAzonositoja) {
-        super(alapToke, alakult, ugyvezeto, dolgozokSzama, dolgozokAzonositoja);
+        super(alakult, ugyvezeto, dolgozokSzama, dolgozokAzonositoja);
+        this.alapToke=alapToke;
+        this.ugyvezeto=ugyvezeto;
     }     
     
     @Override

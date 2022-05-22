@@ -16,9 +16,7 @@ public abstract class Ceg implements Serializable{
     private String alakult;
     private Ugyvezeto ugyvezeto;
     private int dolgozokSzama;
-    protected int alapToke;
-
-   
+       
     public Ceg(String alakult, Ugyvezeto ugyvezeto, int dolgozokSzama, ArrayList<Integer> dolgozokAzonositoja) {
         this.alakult = alakult;
         this.ugyvezeto = ugyvezeto;
@@ -26,19 +24,24 @@ public abstract class Ceg implements Serializable{
         this.dolgozokAzonositoja = dolgozokAzonositoja;
         this.cegjegyzekbeKerult = cegjegyzekbeKerult;
         this.cegjegyzekbeKerult = 0L;
-        this.alapToke = 0;
+       
+    }
+
+    public String getAlakult() {
+        return alakult;
+    }
+
+    public Ugyvezeto getUgyvezeto() {
+        return ugyvezeto;
+    }
+
+    public ArrayList<Integer> getDolgozokAzonositoja() {
+        return dolgozokAzonositoja;
     }
     private ArrayList<Integer> dolgozokAzonositoja;
     private Long cegjegyzekbeKerult;
 
-    public Ceg(int alapToke, String alakult, Ugyvezeto ugyvezeto, int dolgozokSzama, ArrayList<Integer> dolgozokAzonositoja) {
-        this.alakult = alakult;
-        this.ugyvezeto = ugyvezeto;
-        this.dolgozokSzama = dolgozokSzama;
-        this.dolgozokAzonositoja = dolgozokAzonositoja;
-        this.cegjegyzekbeKerult = 0L;
-        this.alapToke = alapToke;
-    }
+  
 
     public int getDolgozokSzama() {
         return dolgozokSzama;
@@ -52,9 +55,7 @@ public abstract class Ceg implements Serializable{
         return cegjegyzekbeKerult;
     }
     
-     public int getAlapToke() {
-        return alapToke;
-    }
+   
 
 
 }

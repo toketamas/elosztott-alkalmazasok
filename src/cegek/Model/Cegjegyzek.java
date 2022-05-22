@@ -24,8 +24,13 @@ public class Cegjegyzek implements ICegjegyzek, Serializable {
     private ArrayList<Ceg> lista;
 
     private Cegjegyzek() {
-        this.lista = null;
+        this.lista = new ArrayList<Ceg>();
     }
+    
+    public ArrayList<Ceg> getLista() {
+        return lista;
+    }
+  
 
     public void addCeg(Ceg ceg) {
         ceg.setCegjegyzekbeKerult(new Timestamp(System.currentTimeMillis()).getTime());
@@ -77,5 +82,7 @@ public class Cegjegyzek implements ICegjegyzek, Serializable {
         }
 
     }
+
+    
 
 }

@@ -4,13 +4,16 @@
  */
 package cegek.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author ttoke
  */
-public class Bt extends Ceg implements IBt {
+public class Bt extends Ceg implements IBt,Serializable {
+
+   
 
     private Beltag beltag;    
 
@@ -26,5 +29,8 @@ public class Bt extends Ceg implements IBt {
     public void beltagValtozas(Beltag beltag) {
         this.beltag = beltag;
     }
-
+    
+    public Beltag getBeltag() {
+        return beltag;
+    }
 }
