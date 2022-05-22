@@ -23,7 +23,7 @@ public class Cegjegyzek implements ICegjegyzek, Serializable {
 
     private ArrayList<Ceg> lista;
 
-    public Cegjegyzek() {
+    private Cegjegyzek() {
         this.lista = null;
     }
 
@@ -61,8 +61,7 @@ public class Cegjegyzek implements ICegjegyzek, Serializable {
         }
     }
 
-    @Override
-    public Cegjegyzek cegjegyzekBetoltes() {
+    public static Cegjegyzek cegjegyzekBetoltes() {
         try {
             FileInputStream file = new FileInputStream("cegjegyzek.ser");
             ObjectInputStream in = new ObjectInputStream(file);
@@ -72,9 +71,9 @@ public class Cegjegyzek implements ICegjegyzek, Serializable {
             file.close();
             System.out.println("Cégjegyzék beolvasva");
             return cegjegyzek;
-        } catch (IOException ex) {
+        } catch (Exception ex) {
             System.out.println("Cégjegyzék betöltése sikertelen");
-            return null;
+            return new Cegjegyzek();
         }
 
     }
