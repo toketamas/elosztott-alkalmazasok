@@ -9,15 +9,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="565.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cegek.CegekFXController">
+<AnchorPane id="txtCegszam" fx:id="txtCegszam" prefHeight="565.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cegek.CegekFXController">
    <children>
-      <AnchorPane id="paneTabla" fx:id="paneTabla" layoutX="68.0" layoutY="90.0" prefHeight="418.0" prefWidth="746.0" visible="false">
+      <AnchorPane id="paneTabla" fx:id="paneTabla" layoutX="68.0" layoutY="90.0" prefHeight="418.0" prefWidth="746.0">
          <children>
             <TableView id="tabla" fx:id="tabla" layoutX="-1.0" layoutY="-2.0" prefHeight="418.0" prefWidth="746.0" />
          </children>
       </AnchorPane>
       <Button id="btnUjCegJegyzek" fx:id="btnUjCegJegyzek" layoutX="245.0" layoutY="34.0" mnemonicParsing="false" onAction="#btnUjCegJegyzekClick" text="Új cégjegyzék" />
-      <AnchorPane id="paneUjCeg" fx:id="paneUjCeg" layoutX="49.0" layoutY="99.0" prefHeight="418.0" prefWidth="679.0">
+      <AnchorPane id="paneUjCeg" fx:id="paneUjCeg" layoutX="49.0" layoutY="99.0" prefHeight="418.0" prefWidth="679.0" visible="false">
          <children>
             <RadioButton id="rdbKft" fx:id="rdbKft" layoutX="14.0" layoutY="104.0" mnemonicParsing="false" onAction="#rdbIsChecked" text="Kft">
                <toggleGroup>
@@ -68,7 +68,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField id="txtAlapToke" fx:id="txtAlapToke" layoutX="402.0" layoutY="222.0" promptText="min: 1 000 000 Ft" />
+            <TextField id="txtAlapToke" fx:id="txtAlapToke" disable="true" layoutX="402.0" layoutY="222.0" promptText="min: 1 000 000 Ft" />
             <Label layoutX="238.0" layoutY="261.0" text="Beltag neve">
                <font>
                   <Font size="14.0" />
@@ -80,5 +80,8 @@
       </AnchorPane>
       <Button id="btnSave" fx:id="btSave" layoutX="363.0" layoutY="34.0" mnemonicParsing="false" onAction="#btnSaveClick" text="Cégjegyzék Mentése" />
       <Button id="ujCeg" fx:id="ujCeg" layoutX="61.0" layoutY="27.0" mnemonicParsing="false" onAction="#btnUjCegClick" text="Új cég" />
+      <Label layoutX="524.0" layoutY="38.0" text="A cégjegyzékben:" />
+      <Label layoutX="662.0" layoutY="38.0" text="cég szerepel" />
+      <TextField id="txtCegSzam" fx:id="txtCegSzam" layoutX="623.0" layoutY="34.0" prefHeight="25.0" prefWidth="36.0" />
    </children>
 </AnchorPane>
